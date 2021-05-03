@@ -1,0 +1,26 @@
+*{
+    text-align: center;
+    list-style-position: inside;
+    background-color: rgba(31,37,47,.9);
+
+}
+#container {
+    text-align: center;
+    
+    color: white;
+
+}
+.baslık {
+    color: #3172ff;
+}
+
+.navbar {
+    
+    text-align: center;
+    color: #3172ff;
+    font-size: 25px;
+}
+
+.navbar a {
+    background-color:#eee;
+}
