@@ -3,24 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/google_homepage/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
     <title>Google</title>
+    <!-- Dosya uzantılarında bazı problemler yaşadım git'ten alıp düzenlemek konuşunda karışıklıkları elimden geldiğince düzenlemeye çalıştım  -->
+    
   </head>
   <body>
     <div class="panel">
       <nav>
         <ul class="header">
-          <li class="pic headerli">
-            <a href="https://www.github.com/cengizcmataraci" target="_blank"
+          <li class="pic-Headerli">
+            <a href="https://github.com/KenanCanCelikhan" target="_blank"
               ><img
-                src="/google_homepage/assets/profilepic.jpg"
-                alt=""
+                src="assets/Kenan-Can.jpg" 
+                alt="kenanfoto"
                 style="margin-right: 1px;"
-            /></a>
+                width="32px"
+            /></a> <!-- kendi resmimi eklediğim kısım-->
           </li>
           <li style="margin: 8px" class="headerli">
             <a href="https://www.google.com.tr/intl/en/about/products?tab=wh"
-              ><img src="/google_homepage/assets/appsbutton.svg" alt="" style="width: 16px; height: 16px; margin-right: 3px;"></a
+              ><img src="assets/appsbutton.svg" alt="" style="width: 16px; height: 16px; margin-right: 3px;"></a
             >
           </li>
           <li style="margin: 8px; margin-left: -2px;" class="headerli">
@@ -38,9 +41,9 @@
       </nav>
       <div class="container">
         <img
-          src="/google_homepage/assets/googlefirstlogo.png"
+          src="assets/logo.png"
           width="350px"
-          alt=""
+          alt="google güncel logo"
         />
       </div>
       <div class="search-area">
@@ -52,10 +55,15 @@
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
               >
-                <path
+                <path  
                   d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
                 ></path>
               </svg>
+             
+
+              
+                
+              </div>
             </span>
           </div>
           <div class="input-enter">
@@ -66,19 +74,24 @@
                 maxlength="2048"
                 autofocus="true"
               />
+              
+              <img src="assets/voicelogo.png" alt="mic logo"
+              class="search-mic-img">
             </div>
           </div>
         </div>
       </div>
-
+      
       <div class="buttons">
-        <a href=""
-          ><button class="googlesearch">Google Search</button></a
-        >
-        <a href=""
-          ><button class="feelinglucky">I'm Feeling Lucky</button></a
-        >
+          <center>
+          
+            <button class="feelinglucky">I'm Feeling Lucky</button>
+          
+            <button class="googlesearch">Google Search</button>
+            
+          </center> 
       </div>
+      
     </div>
 
     <nav>

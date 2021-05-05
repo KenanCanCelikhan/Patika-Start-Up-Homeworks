@@ -7,6 +7,15 @@
     font-size: 13px;
   }
   
+  .pic-Headerli,a{    /* belirlenen class yapısını düzenlemeye çalıştım */
+    float: right;
+  }
+  .pic-Headerli img{
+    margin: 7px;
+    padding: 0;
+    border: 1px solid whitesmoke;
+    border-radius: 100%; /* üst header düzeni*/
+  }
   .headerli a {
     display: block;
     color: black;
@@ -27,13 +36,14 @@
   .search-area {
     background: #fff;
     display: flex;
-    border: 1px solid #dfe1e5;
+    border: 1px solid #dfe1e5;  
     box-shadow: none;
     z-index: 3;
     height: 44px;
     margin: 0 auto;
     margin-top: -77px;
     width: 582px;
+    border-radius:24px; /* arama çubuğu kavis özelliğini buraya ekledim*/
   }
   
   .search-area:hover {
@@ -65,6 +75,9 @@
     position: relative;
   }
   
+  
+  
+  
   .input-enter {
     display: flex;
     flex: 1;
@@ -76,20 +89,30 @@
     flex: 100%;
     white-space: pre;
     font: 16px arial, sans-serif;
-    line-height: 34px;
-    height: 34px !important;
+    line-height: 36px; /*yazı boyutunu ayarladım*/
+    left: -60px;/*yazı konumunu böyle ayarlayabildim*/
+    height: 37px !important;
     display: block;
+    position: relative;
   }
-  
+  .search-mic-img{ /*mic konumlandırma */
+    position: absolute;
+    right: -50px ;
+    bottom: 0;
+    width: 24px;
+    height: 26px;
+  }
   .input {
-    margin: 0;
+    width:480px; /* genişlik ayarını düzenlendi*/
+    border:none; /* borderi kaldırmak için kullandım */
+    margin: 0; /*imput kısmında ,alttaki butonların hover özelliklerinin çalışmasını önleyen bir sorun oluştu ,çözümünü anlayamadım  */
     padding: 0;
     color: rgba(0, 0, 0, 0.87);
     word-wrap: break-word;
     outline: none;
     display: flex;
     flex: 100%;
-    margin-top: -68px;
+    margin-top: -68px;  /**/
     font: 16px arial, sans-serif;
     line-height: 34px;
     height: 34px !important;
@@ -103,27 +126,72 @@
     appearance: textfield;
     cursor: text;
   }
-  
+  .buttons{ /* butonların arka plan yapısını burda oluşturup düzenlemelere alt satırlarda devam ettim */
+    width: 571px;
+    height: 71px;
+    padding: 19px;
+    margin: 0 auto;
+    
+   
+    
+  }
+  .buttons a{
+    float: none;
+    
+  }
   .googlesearch {
-    margin: 11px 4px;
+    margin: 11px 4px; /*butonları özelleştirdim*/
     padding: 0 16px;
+    height:36px;
+    border : 1px solid #f2f2f2;
+    font-family: arial, sans-serif;
+    color: #5f6368;
+    font-size: 14px;
+    border-radius:  4px;
+
     line-height: 27px;
     min-width: 54px;
     text-align: center;
     cursor: pointer;
     user-select: none;
+  }
+  .googlesearch:hover{
+    background-color:black; /*google resmi sitesinin hover özelliklerini bulamadım  bu şekilde düzenledim */
+    color:white;
+    border-radius: 5px;
+    border: solid 1px;
   }
   
   .feelinglucky {
+    margin: 11px 4px;
     padding: 0 16px;
+    height:36px;
+    border : 1px solid #f2f2f2;
+    font-family: arial, sans-serif;
+    color: #5f6368;
+    font-size: 14px;
+    border-radius:  4px;
+
     line-height: 27px;
     min-width: 54px;
     text-align: center;
     cursor: pointer;
     user-select: none;
   }
+  .feelinglucky:hover{
+    background-color:black; /*google resmi sitesinin hover özelliklerini bulamadım  bu şekilde düzenledim */
+    color: white;
+    border-radius: 5px;
+    border: solid 1px;
+  }
   
   .footer {
+
+    background-color:#f2f2f2;
+    text-decoration: none; /*liste alt çizgisi kaldırmak için*/
+    list-style-type: none;   /*listeleme  noktalarını kaldırmak için kullandım*/
+
+    
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -138,6 +206,7 @@
   
   .footerli {
     float: left;
+    
   }
   
   .footerli a {
